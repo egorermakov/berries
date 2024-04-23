@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Ягоды</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -36,18 +36,18 @@
     </header>
 
     <main class="page__main page-main">
-      <section>
-        <h1>Ягоды с доставкой </h1>
+      <header class="page-main__header promo">
+        <h1 class="page-main__heading">Ягоды с доставкой </h1>
         <ul>
           <li>Отборные ягоды</li>
           <li>Натуральный вкус сохранён методом шоковой заморозки</li>
           <li>Доставка по Санкт-Петербургу</li>
         </ul>
         <a class="button" href="">Заказать</a>
-      </section>
+      </header>
 
-      <section class="page__catalog catalog">
-        <h2 class="catalog__title">Каталог</h2>
+      <section class="page-main__section catalog">
+        <h2 class="page-main__heading">Каталог</h2>
 
         <div class="catalog__list">
           <article class="catalog__item product-card">
@@ -55,7 +55,7 @@
               <img class="product-card__img" src="images/catalog/catalog-1.jpg" width="264" height="180" alt aria-hidden="true">
             </picture>
             <h3 class="product-card__title">Малина</h3>
-            <p class="product-card__desc">
+            <p class="product-card__description">
               <span class="product-card__price">350 ₽</span>
               <span class="product-card__weight">за 1 кг</span>
             </p>
@@ -69,7 +69,7 @@
               <img class="product-card__img" src="images/catalog/catalog-2.jpg" width="264" height="180" alt aria-hidden="true">
             </picture>
             <h3 class="product-card__title">Ежевика</h3>
-            <p class="product-card__desc">
+            <p class="product-card__description">
               <span class="product-card__price">550 ₽</span>
               <span class="product-card__weight">за 1 кг</span>
             </p>
@@ -83,7 +83,7 @@
               <img class="product-card__img" src="images/catalog/catalog-3.jpg" width="264" height="180" alt aria-hidden="true">
             </picture>
             <h3 class="product-card__title">Брусника</h3>
-            <p class="product-card__desc">
+            <p class="product-card__description">
               <span class="product-card__price">390 ₽</span>
               <span class="product-card__weight">за 1 кг</span>
             </p>
@@ -97,7 +97,7 @@
               <img class="product-card__img" src="images/catalog/catalog-4.jpg" width="264" height="180" alt aria-hidden="true">
             </picture>
             <h3 class="product-card__title">Клубника</h3>
-            <p class="product-card__desc">
+            <p class="product-card__description">
               <span class="product-card__price">450 ₽</span>
               <span class="product-card__weight">за 1 кг</span>
             </p>
@@ -111,7 +111,7 @@
               <img class="product-card__img" src="images/catalog/catalog-5.jpg" width="264" height="180" alt aria-hidden="true">
             </picture>
             <h3 class="product-card__title">Вишня</h3>
-            <p class="product-card__desc">
+            <p class="product-card__description">
               <span class="product-card__price">375 ₽</span>
               <span class="product-card__weight">за 1 кг</span>
             </p>
@@ -125,7 +125,7 @@
               <img class="product-card__img" src="images/catalog/catalog-6.jpg" width="264" height="180" alt aria-hidden="true">
             </picture>
             <h3 class="product-card__title">Крыжовник</h3>
-            <p class="product-card__desc">
+            <p class="product-card__description">
               <span class="product-card__price">300 ₽</span>
               <span class="product-card__weight">за 1 кг</span>
             </p>
@@ -139,7 +139,7 @@
               <img class="product-card__img" src="images/catalog/catalog-7.jpg" width="264" height="180" alt aria-hidden="true">
             </picture>
             <h3 class="product-card__title">Голубика</h3>
-            <p class="product-card__desc">
+            <p class="product-card__description">
               <span class="product-card__price">510 ₽</span>
               <span class="product-card__weight">за 1 кг</span>
             </p>
@@ -153,7 +153,7 @@
               <img class="product-card__img" src="images/catalog/catalog-8.jpg" width="264" height="180" alt aria-hidden="true">
             </picture>
             <h3 class="product-card__title">Клюква</h3>
-            <p class="product-card__desc">
+            <p class="product-card__description">
               <span class="product-card__price">320 ₽</span>
               <span class="product-card__weight">за 1 кг</span>
             </p>
@@ -165,26 +165,26 @@
 
       </section>
 
-      <section class="page__news news">
+      <section class="page-main__section news">
         <h2 class="visually-hidden">Новости</h2>
-        <p class="news__title">Что новенького?</p>
+        <p class="page-main__heading">Что новенького?</p>
 
         <div class="news__list">
           <article class="news__item news-card">
             <h3 class="news-card__title">Новый урожай клубники</h3>
-            <p class="news-card__desc">К нам поступила свежая сочная ароматная клубника из Алтайского края. Крупные отборные ягоды можно приобрести свежими от 200 гр, или замороженными от 1 кг. Поторопитесь, сезон клубники короткий и свежие ягоды скоро закончатся.</p>
+            <p class="news-card__description">К нам поступила свежая сочная ароматная клубника из Алтайского края. Крупные отборные ягоды можно приобрести свежими от 200 гр, или замороженными от 1 кг. Поторопитесь, сезон клубники короткий и свежие ягоды скоро закончатся.</p>
             <div class="news-card__date">22 июня 2022</div>
           </article>
 
           <article class="news__item news-card">
             <h3 class="news-card__title">В июне дарим скидку 15% на все свежие ягоды</h3>
-            <p class="news-card__desc">Свежие ягоды урожая этого года со скидкой 15%.  Клубнику, малину, голубику, вишню доставим от 200 гр.</p>
+            <p class="news-card__description">Свежие ягоды урожая этого года со скидкой 15%.  Клубнику, малину, голубику, вишню доставим от 200 гр.</p>
             <div class="news-card__date">15 июня 2022</div>
           </article>
 
           <article class="news__item news-card">
             <h3 class="news-card__title">Микс из ягод</h3>
-            <p class="news-card__desc">Мы приготовим для вас смеси
+            <p class="news-card__description">Мы приготовим для вас смеси
               из различных замороженных ягод по вашему пожеланию. Ягодные смеси удобно использовать для приготовления напитков. Все ягоды замораживаются методом шоковой заморозки, что позволяет сохранить их естественный вкус и аромат.</p>
             <div class="news-card__date">02 июня 2022</div>
           </article>
@@ -192,17 +192,17 @@
 
       </section>
 
-      <section class="page__contacts contacts">
+      <footer class="page-main__footer contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <p>Где забрать ягоды?</p>
-        <p class="contacts__title">Забери ягоды с нашего склада по адресу: </p>
+        <p class="page-main__heading">Где забрать ягоды?</p>
+        <p class="contacts__text">Забери ягоды с нашего склада по адресу: </p>
         <address class="contacts__address">
           <p class="contacts__address-text">Набережная Обводного канала, 101</p>
           <a class="contacts__phone" href="tel:+79105244118">+ 7 910 524 41 18</a>
           <a class="contacts__email" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
         </address>
         <img class="contacts__map" src="images/map.png" width="320" height="372" alt="Карта к нашему офису">
-      </section>
+      </footer>
     </main>
 
     <footer class="page__footer page-footer">
