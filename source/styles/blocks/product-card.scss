@@ -1,0 +1,28 @@
+.product-card {
+  border-radius: 40px;
+  box-shadow: $product-card-shadow;
+  overflow: hidden;
+}
+
+.product-card__content {
+  padding: 28px 22px 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card__title {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: $heading-h3;
+  font-weight: 400;
+  color: $color-green;
+}
+
+.product-card__description {
+  margin: 0;
+  margin-bottom: 38px;
+  font-size: $text-body-1;
+  display: flex;
+  gap: 12px;
+}

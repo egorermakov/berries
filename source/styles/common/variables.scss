@@ -1,1 +1,47 @@
-/* здесь используйте глобальные переменные */
+// Шрифты
+$font-heading: "Comfortaa", sans-serif;
+$font-body: "Raleway", sans-serif;
+
+// Типографика
+$heading-h1: 52px;
+$heading-h1-tablet: 48px;
+$heading-h1-mobile: 36px;
+$heading-h2: 52px;
+$heading-h2-tablet: 48px;
+$heading-h2-mobile: 36px;
+$heading-h3: 28px;
+$heading-h3-mobile: 20px;
+$text-links: 20px;
+$text-body-large: 20px;
+$text-body-large-mobile: 16px;
+$text-body-1: 18px;
+$text-body-1-mobile: 16px;
+$text-body-2: 16px;
+$text-body-2-mobile: 14px;
+$text-links-large: 28px;
+$text-button: 28px;
+$text-button-mobile: 20px;
+$text-developer: 16px;
+$text-developer-mobile: 11px;
+
+// Цвета
+$color-white: #FBFCFE;
+$color-blue-gray: #F1F6FC;
+$color-leaf-grey: rgba(#8E9892, 0.7);
+$color-green: #0F805D;
+$color-purple:#6A107A;
+$color-black: #000000;
+$color-purple-disabled: rgba(#6A107A, 0.6);
+$color-purple-hover: #B22EC8;
+$color-green-hover: #7BDB0A;
+$color-green-disabled: rgba(#0F805D, 0.5);
+$color-error: #FF8282;
+
+// Тень
+$main-shadow: 0 4px 4px 0 rgba(#580D65, 0.25);
+$product-card-shadow: 0 4px 4px 0 rgba(#580D65, 0.15);
+
+//Viewports
+$breakpoint-medium: 768px;
+$breakpoint-large: 1300px;
+$breakpoint-small-down: 767px;

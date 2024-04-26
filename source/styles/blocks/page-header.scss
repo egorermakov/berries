@@ -1,0 +1,23 @@
+.page-header {
+  background-color: $color-blue-gray;
+}
+
+.page-header__bar {
+  margin: 0 auto;
+  padding: 8px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: $main-shadow;
+}
+
+.page-header__toggle {
+  appearance: none;
+  width:  48px;
+  height: 48px;
+  background-image: url(../../icons/burger.svg);
+  background-repeat: no-repeat;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.social {
+  align-self: center;
+}
+
+.social__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.social__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--telegram {
+    background-image: url(../../icons/telegram.svg);
+  }
+
+  &--vk {
+    background-image: url(../../icons/vk.svg);
+  }
+
+  &--youtube {
+    background-image: url(../../icons/youtube.svg);
+  }
+}

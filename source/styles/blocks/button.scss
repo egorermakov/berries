@@ -1,0 +1,31 @@
+.button {
+  padding: 14px;
+  min-width: 220px;
+  display: inline-block;
+  color: $color-white;
+  background-color: $color-purple;
+  border: none;
+  font-family: $font-body;
+  font-size: $text-button-mobile;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  border-radius: 40px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-purple-hover;
+  }
+
+  &:active {
+    background-color: $color-purple-disabled;
+  }
+
+  &--cta {
+    padding: 16px;
+    min-width: 264px;
+    box-shadow: $main-shadow;
+  }
+}
+

@@ -1,0 +1,56 @@
+.contacts {
+  margin-bottom: 60px;
+}
+
+.contacts__heading {
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+.contacts__text {
+  margin: 0;
+  margin-bottom: 34px;
+  font-size: $text-body-large-mobile;
+  text-align: center;
+}
+
+.address__list {
+  @include reset-list;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.address__item {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 4px;
+  align-items: center;
+  font-style: normal;
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--leaf::before {
+    background-image: url(../../icons/leaf.svg);
+  }
+
+  &--call::before {
+    background-image: url(../../icons/call.svg);
+  }
+
+  &--email::before {
+    background-image: url(../../icons/email.svg);
+  }
+}
+
+.address__link {
+  text-decoration: none;
+  color: $color-black;
+}

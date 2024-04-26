@@ -1,0 +1,49 @@
+.promo {
+  padding: 60px 0 190px;
+  background-color: $color-blue-gray;
+  background-image: url(../../images/background/promo-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo__heading {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.promo__list {
+  @include reset-list;
+  margin: 0 28px 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.promo__item {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  align-items: center;
+  font-size: $text-body-1-mobile;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--selected::before {
+    background-image: url(../../icons/selected.svg);
+  }
+
+  &--ice::before {
+    background-image: url(../../icons/ice.svg);
+  }
+
+  &--delivery::before {
+    background-image: url(../../icons/delivery.svg);
+  }
+}

@@ -1,0 +1,14 @@
+.catalog {
+  padding: 60px 0;
+}
+
+.catalog__heading {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

@@ -1,0 +1,13 @@
+.news {
+  padding: 64px 0 60px;
+}
+
+.news__heading {
+  margin-bottom: 64px;
+}
+
+.news__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
