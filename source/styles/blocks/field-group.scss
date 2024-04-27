@@ -28,14 +28,3 @@
 .field-group__list--view {
   gap: 23px;
 }
-
-.field-group__item {
-  display: grid;
-  grid-template-columns: 24px 1fr;
-  gap: 12px;
-  font-size: $text-body-1-mobile;
-
-  &::before {
-    content: "";
-  }
-}

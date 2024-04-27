@@ -1,0 +1,51 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field__lead {
+  margin-left: 12px;
+  font-size: $text-body-2-mobile;
+
+  & span {
+    color: $color-error;
+  }
+}
+
+.field__input {
+  appearance: none;
+  padding: 16px 12px;
+  font-family: $font-body;
+  font-size: $text-body-2;
+  border: 1px solid $color-green;
+  border-radius: 20px;
+
+  &::placeholder {
+    color: $color-leaf-grey;
+  }
+
+  &:hover {
+    border-color: $color-green-hover;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $color-green-hover;
+    outline: none;
+  }
+
+  &:invalid {
+    border-color: $color-error;
+  }
+
+  &:invalid:placeholder-shown {
+    border-color: $color-green;
+  }
+
+  &:disabled {
+    background: transparent;
+    border-color: $color-leaf-grey;
+  }
+}
+

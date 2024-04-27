@@ -1,0 +1,99 @@
+.control {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 12px;
+    font-size: $text-body-1-mobile;
+  }
+
+.control__input {
+  width: 100%;
+  height: 24px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.control__lead {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 12px;
+  align-items: center;
+
+  &::after,
+  &::before {
+    content: "";
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 24px;
+    height: 24px;
+  }
+
+  .control--checkbox &::before {
+    background-color: $color-green;
+    -webkit-mask: url(../../icons/checkbox-false.svg) no-repeat 50% 50%;
+    mask: url(../../icons/checkbox-false.svg) no-repeat 50% 50%;
+  }
+
+  .control--checkbox .control__input:checked + &::before {
+    background-color: $color-green;
+    -webkit-mask: url(../../icons/checkbox-true.svg) no-repeat 50% 50%;
+    mask: url(../../icons/checkbox-true.svg) no-repeat 50% 50%;
+  }
+
+  .control--checkbox .control__input:hover + &::before,
+  .control--checkbox .control__input:checked:hover + &::before {
+    background-color: $color-green-hover;
+  }
+
+  .control--checkbox .control__input:focus + &::before,
+  .control--checkbox .control__input:checked:focus + &::before {
+    background-color: $color-green-hover;
+  }
+
+  .control--checkbox .control__input:disabled + &::before,
+  .control--checkbox .control__input:checked:disabled + &::before {
+    background-color: $color-leaf-grey;
+  }
+
+  .control--checkbox .control__input:disabled:hover + &::before,
+  .control--checkbox .control__input:checked:disabled:hover + &::before {
+    background-color: $color-leaf-grey;
+  }
+
+  .control--radio &::before {
+    border: 2px solid $color-green;
+    border-radius: 50%;
+  }
+
+  .control--radio .control__input:checked + &::after {
+    background-color: $color-green;
+    background-clip: content-box;
+    border: 7px solid transparent;
+    border-radius: 50%;
+  }
+
+  .control--radio .control__input:hover + &::before {
+    border-color: $color-green-hover;
+  }
+
+  .control--radio .control__input:checked:hover + &::after {
+    background-color: $color-green-hover;
+  }
+
+  .control--radio .control__input:focus + &::before {
+    border-color: $color-green-hover;
+  }
+
+  .control--radio .control__input:checked:focus + &::after {
+    background-color: $color-green-hover;
+  }
+
+  .control--radio .control__input:disabled + &::before {
+    border-color: $color-leaf-grey;
+  }
+
+  .control--radio .control__input:checked:disabled + &::after {
+    background-color: $color-leaf-grey;
+  }
+}
