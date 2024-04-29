@@ -1,9 +1,20 @@
 .promo {
-  padding: 60px 0 190px;
   background-color: $color-blue-gray;
   background-image: url(../../images/background/promo-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.promo__container {
+    padding: 60px 0 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $tablet-width)  {
+      padding: 142px 0 420px 184px;
+      align-items: flex-start;
+    }
 }
 
 .promo__heading {
@@ -13,10 +24,16 @@
 
 .promo__list {
   @include reset-list;
-  margin: 0 28px 58px;
+  width: 208px;
+  margin-bottom: 58px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+
+  @media (min-width: $tablet-width)  {
+    width: 500px;
+    align-items: flex-start;
+  }
 }
 
 .promo__item {
@@ -25,6 +42,10 @@
   gap: 12px;
   align-items: center;
   font-size: $text-body-1-mobile;
+
+  @media (min-width: $tablet-width)  {
+    font-size: $text-body-1;
+  }
 
   &::before {
     content: "";

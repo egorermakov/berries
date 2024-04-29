@@ -3,11 +3,11 @@
   margin-right: auto;
   margin-left: auto;
 
-  @media (min-width: $breakpoint-medium) {
-    // width: 708px;
+  @media (min-width: $tablet-width) {
+    width: 716px;
   }
 
-  @media (min-width: $breakpoint-large) {
-    // width: 1220px;
+  @media (min-width: $desktop-width) {
+    width: 1128px;
   }
 }
