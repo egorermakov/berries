@@ -10,6 +10,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: $text-body-2-mobile;
+
+  @media (min-width: $tablet-width) {
+    font-size: $text-body-2;
+  }
 }
 
 .product-card__title {

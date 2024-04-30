@@ -8,11 +8,31 @@
 
 .news__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 
-  @media (min-width: $tablet-width) {
 
+  @media (min-width: $tablet-width) {
+    column-gap: 20px;
+    row-gap: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 20px;
+    row-gap: 34px;
+  }
+}
+
+.news__item {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 348px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 360px;
   }
 }

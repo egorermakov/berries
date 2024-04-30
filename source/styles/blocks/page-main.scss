@@ -23,6 +23,14 @@
   font-weight: 400;
   color: $color-green;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: $heading-h1-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $heading-h1;
+  }
 }
 
 .page-main__description {

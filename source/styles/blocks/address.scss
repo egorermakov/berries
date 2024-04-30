@@ -13,6 +13,10 @@
   align-items: center;
   font-style: normal;
 
+  @media (min-width: $tablet-width) {
+    font-size: $text-body-2;
+  }
+
   &::before {
     content: "";
     width: 32px;
