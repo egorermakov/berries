@@ -20,6 +20,10 @@
   gap: 12px;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+
+  }
+
   &::after,
   &::before {
     content: "";

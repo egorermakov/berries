@@ -7,7 +7,12 @@
   background-image: url(../../images/background/inner-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 100px;
+    height: 200px;
+  }
 }
 
 .page-main__header--inner  {
@@ -36,4 +41,9 @@
 .page-main__description {
   font-size: $text-body-1-mobile;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    font-size: $text-body-1;
+  }
 }

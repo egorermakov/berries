@@ -1,6 +1,5 @@
 .address__list {
   @include reset-list;
-  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   gap: 12px;
