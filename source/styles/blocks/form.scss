@@ -2,14 +2,22 @@
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 624px;
+  }
 }
 
 .form__group {
-  width: 484px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 70px 48px;
+    padding: 0;
+  }
 
   &--contacts {
+    margin: 0;
     width: 100%;
   }
 }
