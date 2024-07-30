@@ -1,9 +1,30 @@
 .news {
-  padding: 64px 0 60px;
+  padding: 64px 0 92px;
+
+  @media (min-width: $tablet-width) {
+    padding: 100px 0 142px;
+  }
 }
 
 .news__heading {
+  margin: 0;
   margin-bottom: 64px;
+  font-family: $font-heading;
+  font-size: $heading-h2-mobile;
+  line-height: normal;
+  font-weight: 400;
+  color: $color-green;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+    font-size: $heading-h2-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 98px;
+    font-size: $heading-h2;
+  }
 }
 
 .news__list {
@@ -12,7 +33,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-
 
   @media (min-width: $tablet-width) {
     column-gap: 20px;

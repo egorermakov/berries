@@ -14,6 +14,7 @@
         <div class="page-header__bar">
           <a class="page-header__logo logo" href="index.html">
             <img class="logo__image" src="images/logo.svg" width="52" height="52" alt="Ягоды">
+            <img class="logo__sign" src="images/logo-sign.svg" width="64" height="36" aria-hidden="true">
           </a>
 
           <button class="page-header__toggle" type="button">
@@ -39,17 +40,19 @@
       </nav>
     </header>
 
-    <main class="page__main page-main page-main--inner">
-      <header class="page-main__header page-main__header--inner container">
-        <h1 class="page-main__heading">Закажи ягоды</h1>
-        <p class="page-main__description">
-          Мы соберем для вас ягоды  и доставим их в удобном
-          <br>
-          для вас виде - свежими или замороженными
-        </p>
+    <main class="page__main page-main">
+      <header class="page-main__section page-main__section--leaf hero">
+        <div class="hero__container container">
+          <h1 class="hero__heading">Закажи ягоды</h1>
+          <p class="hero__description">
+            Мы соберем для вас ягоды  и доставим их в удобном
+            <br>
+            для вас виде - свежими или замороженными
+          </p>
+        </div>
       </header>
 
-      <section class="page-main__section form">
+      <section class="page-main__section page-main__section--leaf form">
         <form class="form__container container" method="post" action="https://echo.htmlacademy.ru/">
           <h2 class="visually-hidden">Форма заказа</h2>
           <fieldset class="form__group field-group">
@@ -155,34 +158,36 @@
 
           <fieldset class="form__group field-group">
             <legend class="field-group__heading">Способ доставки</legend>
-            <ul class="field-group__list">
+            <ul class="field-group__list field-group__list--delivery">
               <li class="field-group__item">
                 <label class="control control--radio">
                   <input class="control__input visually-hidden" type="radio" name="shipping-method" value="delivery" checked>
-                  <span class="control__lead">Доставка (по СПБ в пределах КАД)</span>
+                  <span class="control__lead">
+                    Доставка <br> (по СПБ в пределах <br> КАД)</span>
                 </label>
               </li>
 
               <li class="field-group__item">
                 <label class="control control--radio">
                   <input class="control__input visually-hidden" type="radio" name="shipping-method" value="pickup">
-                  <span class="control__lead">Самовывоз (Набережная Обводного канала, 101)</span>
+                  <span class="control__lead">
+                   Самовывоз <br> (Набережная Обводного <br> канала, 101)</span>
                 </label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form__group form__group--contacts field-group">
-            <legend class="field-group__heading">Ваши контакты</legend>
-            <ul class="field-group__list">
-              <li class="field-group__item">
+            <legend class="field-group__heading field-group__heading--contacts">Ваши контакты</legend>
+            <ul class="field-group__list field-group__list--contacts">
+              <li class="field-group__item field-group__item--name ">
                 <label class="field">
                   <span class="field__lead">Имя <span>*</span></span>
                   <input class="field__input" type="text" name="name" placeholder="Как к вам обращаться?" required>
                 </label>
               </li>
 
-              <li class="field-group__item">
+              <li class="field-group__item field-group__item--phone">
                 <label class="field">
                   <span class="field__lead">Телефон <span>*</span></span>
 
@@ -190,21 +195,21 @@
                 </label>
               </li>
 
-              <li class="field-group__item">
+              <li class="field-group__item field-group__item--email">
                 <label class="field">
                   <span class="field__lead">Email <span>*</span></span>
                   <input class="field__input" type="email" name="e-mail" placeholder="Ваш email"  required>
                 </label>
               </li>
 
-              <li class="field-group__item">
+              <li class="field-group__item field-group__item--address">
                 <label class="field">
                   <span class="field__lead" for="address">Адрес <span>*</span></span>
-                  <textarea class="field__input" name="address" id="address" rows="3" placeholder="Адрес в Санкт-Петербурге" required></textarea>
+                  <input class="field__input" name="address" id="address" placeholder="Адрес в Санкт-Петербурге" required></input>
                 </label>
               </li>
 
-              <li class="field-group__item">
+              <li class="field-group__item field-group__item--comment">
                 <label class="field">
                   <span class="field__lead" for="comment">Пожелания к заказу</span>
                   <textarea class="field__input" name="comment" id="comment" rows="5" placeholder="Чем мы можем вам помочь?"></textarea>
@@ -213,32 +218,34 @@
             </ul>
           </fieldset>
 
-          <button class="button button--cta" type="submit">Заказать</button>
+          <button class="button button--cta form__button" type="submit">Заказать</button>
         </form>
       </section>
 
       <footer class="page-main__footer contacts">
         <div class="contacts__container container">
           <h2 class="visually-hidden">Контакты</h2>
-          <p class="page-main__heading contacts__heading">Где забрать ягоды?</p>
-          <p class="contacts__text">Забери ягоды с нашего склада <br> по адресу: </p>
-          <address class="contacts__address address">
-            <ul class="address__list">
-              <li class="address__item address__item--leaf">
-                Набережная Обводного канала, 101
-              </li>
-              <li class="address__item address__item--call">
-                <a class="address__link" href="tel:+79105244118">
-                  + 7 910 524 41 18
-                </a>
-              </li>
-              <li class="address__item address__item--email">
-                <a class="address__link" href="mailto:info@yagoda.ru">
-                  info@yagoda.ru
-                </a>
-              </li>
-            </ul>
-          </address>
+          <p class="contacts__heading">Где забрать ягоды?</p>
+          <div class="contacts__content">
+            <p class="contacts__text">Забери ягоды с нашего склада <br> по адресу: </p>
+            <address class="contacts__address address">
+              <ul class="address__list">
+                <li class="address__item address__item--leaf">
+                  Набережная Обводного канала, 101
+                </li>
+                <li class="address__item address__item--call">
+                  <a class="address__link" href="tel:+79105244118">
+                    + 7 910 524 41 18
+                  </a>
+                </li>
+                <li class="address__item address__item--email">
+                  <a class="address__link" href="mailto:info@yagoda.ru">
+                    info@yagoda.ru
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
         </div>
 
         <img class="contacts__map" src="images/map.png" width="320" height="372" alt="Карта к нашему офису">
@@ -249,6 +256,7 @@
       <div class="page-footer__container container">
         <a class="page-footer__logo logo">
           <img src="images/logo.svg" width="52" height="52" alt="Ягоды">
+          <img class="logo__sign" src="images/logo-sign.svg" width="64" height="36" aria-hidden="true">
         </a>
 
         <div class="page-footer__social social">

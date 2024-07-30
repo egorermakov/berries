@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: 32px 1fr;
   gap: 4px;
+  justify-items: flex-start;
   align-items: center;
   font-style: normal;
 

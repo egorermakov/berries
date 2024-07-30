@@ -6,7 +6,7 @@
   }
 
 .control__input {
-  width: 100%;
+  width: 24px;
   height: 24px;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -20,8 +20,10 @@
   gap: 12px;
   align-items: center;
 
-  @media (min-width: $tablet-width) {
-
+  @media (min-width: $desktop-width) {
+    & br + br {
+      display: none;
+    }
   }
 
   &::after,

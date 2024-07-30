@@ -1,3 +1,21 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .logo__image {
   width: 52px;
+  height: 52px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.logo__sign {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }

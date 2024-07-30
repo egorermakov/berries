@@ -11,6 +11,11 @@
     flex-direction: row;
     gap: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 36px;
+    gap: 28px;
+  }
 }
 
 .site-menu__item {
@@ -19,6 +24,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 132px;
   }
 }
 

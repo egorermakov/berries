@@ -1,23 +1,36 @@
+.form {
+  padding-bottom: 120px;
+  box-sizing: border-box;
+}
+
 .form__container {
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    width: 624px;
-  }
 }
 
 .form__group {
+  margin: 0;
   margin-bottom: 32px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 70px 48px;
-    padding: 0;
+    margin-bottom: 48px;
+    padding: 0 70px;
   }
 
   &--contacts {
-    margin: 0;
-    width: 100%;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.form__button {
+  @media (min-width: $desktop-width) {
+    min-width: 336px;
+    align-self: center;
   }
 }

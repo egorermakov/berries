@@ -2,9 +2,9 @@
   background-color: $color-blue-gray;
   position: relative;
 
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       width: 100%;
@@ -13,8 +13,7 @@
       z-index: 1;
       background-color: transparent;
     }
-   }
-
+  }
 }
 
 .page-header__nav {
@@ -27,6 +26,11 @@
   @media (min-width: $tablet-width) {
     padding: 22px 0;
     width: 716px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 0;
+    width: 1128px;
   }
 }
 
@@ -41,7 +45,7 @@
     z-index: 1;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
@@ -80,7 +84,7 @@
 
 .page-header__toggle {
   appearance: none;
-  width:  48px;
+  width: 48px;
   height: 48px;
   display: none;
   background-image: url(../../icons/burger.svg);

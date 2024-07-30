@@ -1,0 +1,98 @@
+.home-hero {
+  background-color: $color-blue-gray;
+  background-image: url(../../images/background/home-hero-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: url(../../images/background/home-hero-tablet@1x.jpg);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url(../../images/background/home-hero-desktop@1x.jpg);
+  }
+}
+
+.home-hero__container {
+  padding: 60px 0 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 142px 0 420px 184px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 172px 168px 252px 384px;
+  }
+}
+
+.home-hero__heading {
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: $font-heading;
+  font-size: $heading-h1-mobile;
+  line-height: normal;
+  font-weight: 400;
+  color: $color-green;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+    font-size: $heading-h1-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    font-size: $heading-h1;
+  }
+}
+
+.home-hero__list {
+  @include reset-list;
+  width: 208px;
+  margin-bottom: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    align-items: flex-start;
+  }
+}
+
+.home-hero__item {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  align-items: center;
+  font-size: $text-body-1-mobile;
+
+  @media (min-width: $tablet-width) {
+    font-size: $text-body-1;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--selected::before {
+    background-image: url(../../icons/selected.svg);
+  }
+
+  &--ice::before {
+    background-image: url(../../icons/ice.svg);
+  }
+
+  &--delivery::before {
+    background-image: url(../../icons/delivery.svg);
+  }
+}
