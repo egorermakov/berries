@@ -6,6 +6,15 @@
   text-decoration: none;
   color: $color-black;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: $text-body-2;
   }

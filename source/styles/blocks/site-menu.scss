@@ -22,17 +22,27 @@
   min-width: 112px;
   line-height: 1;
 
-  @media (min-width: $tablet-width) {
-    padding: 20px 0;
-  }
-
   @media (min-width: $desktop-width) {
     min-width: 132px;
   }
 }
 
 .site-menu__link {
+  display: inline-block;
   font-size: $text-links;
   color: $color-black;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-green-hover;
+  }
+
+  &:active {
+    color: $color-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 0;
+  }
 }

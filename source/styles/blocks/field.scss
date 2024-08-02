@@ -36,12 +36,8 @@
     outline: none;
   }
 
-  &:invalid {
+  &:not(:placeholder-shown):invalid {
     border-color: $color-error;
-  }
-
-  &:invalid:placeholder-shown {
-    border-color: $color-green;
   }
 
   &:disabled {
