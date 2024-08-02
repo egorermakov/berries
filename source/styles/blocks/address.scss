@@ -5,17 +5,31 @@
   gap: 12px;
 }
 
-.address__item {
+.address__link {
   display: grid;
   grid-template-columns: 32px 1fr;
   gap: 4px;
   justify-items: flex-start;
   align-items: center;
   font-style: normal;
+  text-decoration: none;
+  color: $color-black;
+
+  &:hover,
+  &:focus {
+    color: $color-green-hover;
+
+  }
+
+  &:active {
+    color: $color-green;
+  }
+
 
   @media (min-width: $tablet-width) {
     font-size: $text-body-2;
   }
+
 
   &::before {
     content: "";
@@ -23,22 +37,30 @@
     height: 32px;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: $color-black;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $color-green-hover;
+  }
+
+  &:active::before {
+    background-color: $color-green;
   }
 
   &--leaf::before {
-    background-image: url(../../icons/leaf.svg);
+    -webkit-mask: url(../../icons/leaf.svg) no-repeat 50% 50%;
+    mask: url(../../icons/leaf.svg) no-repeat 50% 50%;
   }
 
   &--call::before {
-    background-image: url(../../icons/call.svg);
+    -webkit-mask: url(../../icons/call.svg) no-repeat 50% 50%;
+    mask: url(../../icons/call.svg) no-repeat 50% 50%;
   }
 
   &--email::before {
-    background-image: url(../../icons/email.svg);
+    -webkit-mask: url(../../icons/email.svg) no-repeat 50% 50%;
+    mask: url(../../icons/email.svg) no-repeat 50% 50%;
   }
-}
-
-.address__link {
-  text-decoration: none;
-  color: $color-black;
 }

@@ -2,6 +2,17 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  color: $color-green;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-green-hover;
+  }
+
+  &:active {
+    color: $color-green-disabled;
+  }
 }
 
 .logo__image {

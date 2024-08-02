@@ -13,18 +13,37 @@
   display: block;
   width: 32px;
   height: 32px;
+  background-color: $color-green;
   background-position: center;
   background-repeat: no-repeat;
 
+  &:hover,
+  &:focus {
+    background-color: $color-green-hover;
+  }
+
+  &:active {
+    background-color: $color-green-disabled;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    gap: 32px;
+  }
+
   &--telegram {
-    background-image: url(../../icons/telegram.svg);
+    -webkit-mask: url(../../icons/telegram.svg) no-repeat 50% 50%;
+    mask: url(../../icons/telegram.svg) no-repeat 50% 50%;
   }
 
   &--vk {
-    background-image: url(../../icons/vk.svg);
+    -webkit-mask: url(../../icons/vk.svg) no-repeat 50% 50%;
+    mask: url(../../icons/vk.svg) no-repeat 50% 50%;
   }
 
   &--youtube {
-    background-image: url(../../icons/youtube.svg);
+    -webkit-mask: url(../../icons/youtube.svg) no-repeat 50% 50%;
+    mask: url(../../icons/youtube.svg) no-repeat 50% 50%;
   }
 }

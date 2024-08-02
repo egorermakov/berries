@@ -5,4 +5,18 @@
   font-size: $text-developer-mobile;
   text-decoration: none;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: $text-body-2;
+  }
+}
+
+.developer__image {
+  width: 20px;
+  height: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    height: 32px;
+  }
 }
