@@ -40,36 +40,41 @@
     </header>
 
     <main class="page__main page-main">
-      <header class="page-main__section home-hero">
-        <div class="home-hero__container container">
-          <h1 class="home-hero__heading">Ягоды с доставкой</h1>
-          <ul class="home-hero__list">
-            <li class="home-hero__item home-hero__item--selected">Отборные ягоды</li>
-            <li class="home-hero__item home-hero__item--ice">
+      <section class="page-main__section promo">
+        <div class="promo__container container">
+          <h1 class="promo__heading">Ягоды с доставкой</h1>
+          <ul class="promo__list">
+            <li class="promo__item promo__item--selected">Отборные ягоды</li>
+            <li class="promo__item promo__item--ice">
               Натуральный вкус сохранён методом шоковой заморозки
             </li>
-            <li class="home-hero__item home-hero__item--delivery">
+            <li class="promo__item promo__item--delivery">
               Доставка по Санкт-Петербургу
             </li>
           </ul>
-          <a class="home-hero__button button button--cta" href="form.html"
+          <a class="promo__button button button--cta" href="form.html"
             >Заказать</a
           >
         </div>
-      </header>
+      </section>
 
-      <section class="page-main__section page-main__section--leaf catalog">
+      <section class="page-main__section catalog">
         <div class="catalog__container container">
           <h2 class="catalog__heading">Каталог</h2>
 
           <div class="catalog__list">
             <article class="catalog__item product-card">
-              <picture class="product-card__picture">
-                <source type="image/webp" srcset="images/catalog/catalog-1@1x.webp, images/catalog/catalog-1@2x.webp 2x">
-                <img class="product-card__img" src="images/catalog/catalog-1@1x.jpg" srcset="images/catalog/catalog-1@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
-              </picture>
+              <a class="product-card__picture" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/catalog/catalog-1@1x.webp, images/catalog/catalog-1@2x.webp 2x">
+                  <img class="product-card__img" src="images/catalog/catalog-1@1x.jpg" srcset="images/catalog/catalog-1@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
+                </picture>
+              </a>
+
               <div class="product-card__content">
-                <h3 class="product-card__title">Малина</h3>
+                <a class="product-card__link" href="#">
+                  <h3 class="product-card__title">Малина</h3>
+                </a>
                 <p class="product-card__description">
                   <span class="product-card__price">350 ₽</span>
                   <span class="product-card__weight">за 1 кг</span>
@@ -79,12 +84,17 @@
             </article>
 
             <article class="catalog__item product-card">
-              <picture class="product-card__picture">
-                <source type="image/webp" srcset="images/catalog/catalog-2@1x.webp, images/catalog/catalog-2@2x.webp 2x">
-                <img class="product-card__img" src="images/catalog/catalog-2@1x.jpg" srcset="images/catalog/catalog-2@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
-              </picture>
+              <a class="product-card__picture" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/catalog/catalog-2@1x.webp, images/catalog/catalog-2@2x.webp 2x">
+                  <img class="product-card__img" src="images/catalog/catalog-2@1x.jpg" srcset="images/catalog/catalog-2@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
+                </picture>
+              </a>
+
               <div class="product-card__content">
-                <h3 class="product-card__title">Ежевика</h3>
+                <a class="product-card__link" href="#">
+                  <h3 class="product-card__title">Ежевика</h3>
+                </a>
                 <p class="product-card__description">
                   <span class="product-card__price">550 ₽</span>
                   <span class="product-card__weight">за 1 кг</span>
@@ -94,12 +104,17 @@
             </article>
 
             <article class="catalog__item product-card">
-              <picture class="product-card__picture">
-                <source type="image/webp" srcset="images/catalog/catalog-3@1x.webp, images/catalog/catalog-3@2x.webp 2x">
-                <img class="product-card__img" src="images/catalog/catalog-3@1x.jpg" srcset="images/catalog/catalog-3@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
-              </picture>
+              <a class="product-card__picture" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/catalog/catalog-3@1x.webp, images/catalog/catalog-3@2x.webp 2x">
+                  <img class="product-card__img" src="images/catalog/catalog-3@1x.jpg" srcset="images/catalog/catalog-3@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
+                </picture>
+              </a>
+
               <div class="product-card__content">
-                <h3 class="product-card__title">Брусника</h3>
+                <a class="product-card__link" href="#">
+                  <h3 class="product-card__title">Брусника</h3>
+                </a>
                 <p class="product-card__description">
                   <span class="product-card__price">390 ₽</span>
                   <span class="product-card__weight">за 1 кг</span>
@@ -109,12 +124,17 @@
             </article>
 
             <article class="catalog__item product-card">
-              <picture class="product-card__picture">
-                <source type="image/webp" srcset="images/catalog/catalog-4@1x.webp, images/catalog/catalog-4@2x.webp 2x">
-                <img class="product-card__img" src="images/catalog/catalog-4@1x.jpg" srcset="images/catalog/catalog-4@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
-              </picture>
+              <a class="product-card__picture" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/catalog/catalog-4@1x.webp, images/catalog/catalog-4@2x.webp 2x">
+                  <img class="product-card__img" src="images/catalog/catalog-4@1x.jpg" srcset="images/catalog/catalog-4@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
+                </picture>
+              </a>
+
               <div class="product-card__content">
-                <h3 class="product-card__title">Клубника</h3>
+                <a class="product-card__link" href="#">
+                  <h3 class="product-card__title">Клубника</h3>
+                </a>
                 <p class="product-card__description">
                   <span class="product-card__price">450 ₽</span>
                   <span class="product-card__weight">за 1 кг</span>
@@ -124,12 +144,17 @@
             </article>
 
             <article class="catalog__item product-card">
-              <picture class="product-card__picture">
-                <source type="image/webp" srcset="images/catalog/catalog-5@1x.webp, images/catalog/catalog-5@2x.webp 2x">
-                <img class="product-card__img" src="images/catalog/catalog-5@1x.jpg" srcset="images/catalog/catalog-5@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
-              </picture>
+              <a class="product-card__picture" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/catalog/catalog-5@1x.webp, images/catalog/catalog-5@2x.webp 2x">
+                  <img class="product-card__img" src="images/catalog/catalog-5@1x.jpg" srcset="images/catalog/catalog-5@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
+                </picture>
+              </a>
+
               <div class="product-card__content">
-                <h3 class="product-card__title">Вишня</h3>
+                <a class="product-card__link" href="#">
+                  <h3 class="product-card__title">Вишня</h3>
+                </a>
                 <p class="product-card__description">
                   <span class="product-card__price">375 ₽</span>
                   <span class="product-card__weight">за 1 кг</span>
@@ -139,12 +164,17 @@
             </article>
 
             <article class="catalog__item product-card">
-              <picture class="product-card__picture">
-                <source type="image/webp" srcset="images/catalog/catalog-6@1x.webp, images/catalog/catalog-6@2x.webp 2x">
-                <img class="product-card__img" src="images/catalog/catalog-6@1x.jpg" srcset="images/catalog/catalog-6@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
-              </picture>
+              <a class="product-card__picture" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/catalog/catalog-6@1x.webp, images/catalog/catalog-6@2x.webp 2x">
+                  <img class="product-card__img" src="images/catalog/catalog-6@1x.jpg" srcset="images/catalog/catalog-6@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
+                </picture>
+              </a>
+
               <div class="product-card__content">
-                <h3 class="product-card__title">Крыжовник</h3>
+                <a class="product-card__link" href="#">
+                  <h3 class="product-card__title">Крыжовник</h3>
+                </a>
                 <p class="product-card__description">
                   <span class="product-card__price">300 ₽</span>
                   <span class="product-card__weight">за 1 кг</span>
@@ -154,12 +184,17 @@
             </article>
 
             <article class="catalog__item product-card">
-              <picture class="product-card__picture">
-                <source type="image/webp" srcset="images/catalog/catalog-7@1x.webp, images/catalog/catalog-7@2x.webp 2x">
-                <img class="product-card__img" src="images/catalog/catalog-7@1x.jpg" srcset="images/catalog/catalog-7@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
-              </picture>
+              <a class="product-card__picture" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/catalog/catalog-7@1x.webp, images/catalog/catalog-7@2x.webp 2x">
+                  <img class="product-card__img" src="images/catalog/catalog-7@1x.jpg" srcset="images/catalog/catalog-7@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
+                </picture>
+              </a>
+
               <div class="product-card__content">
-                <h3 class="product-card__title">Голубика</h3>
+                <a class="product-card__link" href="#">
+                  <h3 class="product-card__title">Голубика</h3>
+                </a>
                 <p class="product-card__description">
                   <span class="product-card__price">510 ₽</span>
                   <span class="product-card__weight">за 1 кг</span>
@@ -169,12 +204,17 @@
             </article>
 
             <article class="catalog__item product-card">
-              <picture class="product-card__picture">
-                <source type="image/webp" srcset="images/catalog/catalog-8@1x.webp, images/catalog/catalog-8@2x.webp 2x">
-                <img class="product-card__img" src="images/catalog/catalog-8@1x.jpg" srcset="images/catalog/catalog-8@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
-              </picture>
+              <a class="product-card__picture" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/catalog/catalog-8@1x.webp, images/catalog/catalog-8@2x.webp 2x">
+                  <img class="product-card__img" src="images/catalog/catalog-8@1x.jpg" srcset="images/catalog/catalog-8@2x.jpg 2x" width="264" height="180" aria-hidden="true"/>
+                </picture>
+              </a>
+
               <div class="product-card__content">
-                <h3 class="product-card__title">Клюква</h3>
+                <a class="product-card__link" href="#">
+                  <h3 class="product-card__title">Клюква</h3>
+                </a>
                 <p class="product-card__description">
                   <span class="product-card__price">320 ₽</span>
                   <span class="product-card__weight">за 1 кг</span>
@@ -186,7 +226,7 @@
         </div>
       </section>
 
-      <section class="page-main__section page-main__section--leaf news">
+      <section class="page-main__section news">
         <div class="news__container container">
           <h2 class="visually-hidden">Новости</h2>
           <p class="news__heading">Что новенького?</p>
@@ -229,7 +269,7 @@
         </div>
       </section>
 
-      <footer class="page-main__section contacts">
+      <section class="page-main__footer contacts">
         <div class="contacts__container container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__heading">Где забрать ягоды?</p>
@@ -261,7 +301,7 @@
         </div>
 
         <img class="contacts__map" src="images/map.png" width="320" height="372" alt="Карта к нашему офису"/>
-      </footer>
+      </section>
     </main>
 
     <footer class="page__footer page-footer">

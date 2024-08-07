@@ -96,6 +96,10 @@
   background-position: center;
   border: none;
 
+  .page-header__nav--nojs & {
+    display: none;
+  }
+
   &:hover,
   &:focus {
     background-color: $color-green-hover;

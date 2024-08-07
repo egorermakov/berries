@@ -5,6 +5,11 @@
   overflow: hidden;
 }
 
+.product-card__picture {
+  display: block;
+  line-height: 0;
+}
+
 .product-card__content {
   padding: 28px 22px 54px;
   display: flex;
@@ -17,12 +22,25 @@
   }
 }
 
+.product-card__link {
+  margin-bottom: 28px;
+  color: $color-green;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-green-hover;
+  }
+
+  &:active {
+    color: $color-green;
+  }
+}
+
 .product-card__title {
   margin: 0;
-  margin-bottom: 28px;
   font-size: $heading-h3;
   font-weight: 400;
-  color: $color-green;
 }
 
 .product-card__description {
