@@ -70,15 +70,3 @@
     width: 550px;
   }
 }
-
-
-.page-main__styled {
-  background-image: url(../../icons/line-leaf.svg);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: 228px 32px;
-
-  @media (min-width: $tablet-width) {
-    background-size: 296px 42px;
-  }
-}
