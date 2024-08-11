@@ -40,6 +40,7 @@
 .product-card__title {
   margin: 0;
   font-size: $heading-h3;
+  line-height: 32px;
   font-weight: 400;
 }
 
@@ -47,6 +48,8 @@
   margin: 0;
   margin-bottom: 38px;
   font-size: $text-body-1;
+  line-height: 20px;
   display: flex;
-  gap: 12px;
+  justify-content: space-between;
+  gap: 18px;
 }

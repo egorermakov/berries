@@ -1,6 +1,13 @@
 .page-main__heading {
-  margin-bottom: 50px;
-  padding-bottom: 72px;
+  padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom:36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 48px;
+  }
 
   &::before {
     content: "";
@@ -42,28 +49,37 @@
   margin-bottom: 32px;
   font-family: $font-heading;
   font-size: $heading-h1-mobile;
-  line-height: normal;
+  line-height: 40px;
   font-weight: 400;
   color: $color-green;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
     font-size: $heading-h1-tablet;
+    line-height: 54px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
     font-size: $heading-h1;
+    line-height: 58px;
+
   }
 }
 
 .page-main__subtitle {
+  margin: 0 auto;
   font-size: $text-body-1-mobile;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    width: 532px;
+    width: 480px;
     font-size: $text-body-1;
+
+    & br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -1,12 +1,27 @@
 .form {
-  padding-bottom: 120px;
+  padding: 50px 0 88px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 72px 0 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 0 100px;
+  }
 }
 
 .form__container {
-  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 168px;
+  }
 }
 
 .form__group {
@@ -15,21 +30,18 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
-    padding: 0 70px;
-  }
-
-  &--contacts {
-    padding: 0;
+    margin: 0 auto 48px;
+    width: 484px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    width: 792px;
   }
 }
 
 .form__button {
-  @media (min-width: $desktop-width) {
+
+  @media (min-width: $tablet-width) {
     min-width: 336px;
     align-self: center;
   }

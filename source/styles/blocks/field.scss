@@ -7,20 +7,48 @@
 .field__lead {
   margin-left: 12px;
   font-size: $text-body-2-mobile;
+  line-height: 20px;
 
   & span {
     color: $color-error;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: $text-body-2;
   }
 }
 
 .field__input {
   appearance: none;
-  padding: 16px 12px;
+  padding: 15px 12px;
   width: 100%;
   font-family: $font-body;
   font-size: $text-body-2;
+  line-height: 20px;
   border: 1px solid $color-green;
   border-radius: 20px;
+
+  &--address {
+    @media (max-width: $mobile-width-only) {
+      height: 88px;
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 52px;
+    }
+  }
+
+  &--comment {
+    padding-bottom: 8px;
+
+    @media (max-width: $mobile-width-only) {
+      min-height: 88px;
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 144px;
+    }
+  }
 
   &::placeholder {
     color: $color-leaf-grey;

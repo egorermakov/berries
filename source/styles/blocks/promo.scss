@@ -5,10 +5,12 @@
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
+    min-height: 640px;
     background-image: url(../../images/background/promo-mobile@2x.jpg);
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 924px;
     background-image: url(../../images/background/promo-tablet@1x.jpg);
 
     @media (min-resolution: 2dppx) {
@@ -17,7 +19,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 800px;
     background-image: url(../../images/background/promo-desktop@1x.jpg);
+    background-position: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url(../../images/background/promo-desktop@2x.jpg);
@@ -32,7 +36,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 142px 0 420px 184px;
+    padding: 142px 0 0 187px;
     align-items: flex-start;
   }
 
@@ -68,11 +72,20 @@
   margin-bottom: 58px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 12px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
     width: 500px;
     align-items: flex-start;
+    gap: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    margin-left: 24px;
+    gap: 20px;
   }
 }
 
@@ -82,9 +95,19 @@
   gap: 12px;
   align-items: center;
   font-size: $text-body-1-mobile;
+  line-height: 19px;
+
+  @media (max-width: $mobile-width-only) {
+    & span {
+      margin-bottom: 6px;
+      display: flex;
+      align-items: flex-start;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: $text-body-1;
+    line-height: 22px;
   }
 
   &::before {
@@ -106,5 +129,11 @@
 
   &--delivery::before {
     background-image: url(../../icons/delivery.svg);
+  }
+}
+
+.promo__button {
+  @media (min-width: $desktop-width) {
+    margin-left: 37px;
   }
 }

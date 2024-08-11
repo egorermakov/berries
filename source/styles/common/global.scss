@@ -22,19 +22,3 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-hr {
-  margin: 0 auto;
-  border: none;
-  width: 228px;
-  height: 32px;
-  background-image: url(../../icons/line-leaf.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (min-width: $tablet-width) {
-    width: 296px;
-    height: 42px;
-  }
-}

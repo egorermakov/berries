@@ -1,9 +1,9 @@
 .control {
-    display: grid;
-    grid-template-columns: 24px 1fr;
-    gap: 12px;
-    font-size: $text-body-1-mobile;
-  }
+  display: grid;
+  grid-template-columns: 24px auto;
+  gap: 12px;
+  font-size: $text-body-1-mobile;
+}
 
 .control__input {
   width: 24px;
@@ -16,9 +16,16 @@
   grid-column: 1/-1;
   grid-row: 1/2;
   display: grid;
-  grid-template-columns: 24px 1fr;
+  grid-template-columns: 24px auto;
   gap: 12px;
   align-items: center;
+  font-size: $text-body-1-mobile;
+  line-height: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $text-body-1;
+    line-height: 22px;
+  }
 
   @media (min-width: $desktop-width) {
     & br + br {
