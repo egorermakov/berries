@@ -44,14 +44,14 @@
 
   .control--checkbox &::before {
     background-color: $color-green;
-    -webkit-mask: url(../../icons/checkbox-false.svg) no-repeat 50% 50%;
-    mask: url(../../icons/checkbox-false.svg) no-repeat 50% 50%;
+    -webkit-mask: url("../../icons/checkbox-false.svg") no-repeat 50% 50%;
+    mask: url("../../icons/checkbox-false.svg") no-repeat 50% 50%;
   }
 
   .control--checkbox .control__input:checked + &::before {
     background-color: $color-green;
-    -webkit-mask: url(../../icons/checkbox-true.svg) no-repeat 50% 50%;
-    mask: url(../../icons/checkbox-true.svg) no-repeat 50% 50%;
+    -webkit-mask: url("../../icons/checkbox-true.svg") no-repeat 50% 50%;
+    mask: url("../../icons/checkbox-true.svg") no-repeat 50% 50%;
   }
 
   .control--checkbox .control__input:hover + &::before,

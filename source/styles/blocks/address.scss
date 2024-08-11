@@ -18,7 +18,6 @@
   &:hover,
   &:focus {
     color: $color-green-hover;
-
   }
 
   &:active {
@@ -50,17 +49,17 @@
   }
 
   &--leaf::before {
-    -webkit-mask: url(../../icons/leaf.svg) no-repeat 50% 50%;
-    mask: url(../../icons/leaf.svg) no-repeat 50% 50%;
+    -webkit-mask: url("../../icons/leaf.svg") no-repeat 50% 50%;
+    mask: url("../../icons/leaf.svg") no-repeat 50% 50%;
   }
 
   &--call::before {
-    -webkit-mask: url(../../icons/call.svg) no-repeat 50% 50%;
-    mask: url(../../icons/call.svg) no-repeat 50% 50%;
+    -webkit-mask: url("../../icons/call.svg") no-repeat 50% 50%;
+    mask: url("../../icons/call.svg") no-repeat 50% 50%;
   }
 
   &--email::before {
-    -webkit-mask: url(../../icons/email.svg) no-repeat 50% 50%;
-    mask: url(../../icons/email.svg) no-repeat 50% 50%;
+    -webkit-mask: url("../../icons/email.svg") no-repeat 50% 50%;
+    mask: url("../../icons/email.svg") no-repeat 50% 50%;
   }
 }

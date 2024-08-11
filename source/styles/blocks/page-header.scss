@@ -110,8 +110,8 @@
 
     .page-header__nav--opened & {
       background-color: $color-green;
-      -webkit-mask: url(../../icons/close.svg) no-repeat 50% 50%;
-      mask: url(../../icons/close.svg) no-repeat 50% 50%;
+      -webkit-mask: url("../../icons/close.svg") no-repeat 50% 50%;
+      mask: url("../../icons/close.svg") no-repeat 50% 50%;
       mask-size: 28px 28px;
 
       &:hover,
